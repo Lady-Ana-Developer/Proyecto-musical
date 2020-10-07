@@ -1,0 +1,13 @@
+<!-- perfil del contratante -->
+<div class="card text-dark bg-light mb-3" >
+    <h3 class="card-header" style="text-align: center; align-items: center;">Contratante</h3>
+    <div class="card-body" id="presentcontratante">
+        <h4>{{contratantePublico.nombre_y_apellidos}}</h4>
+        <h5 class="card-title">{{contratantePublico.tipo_evento}}</h5>
+        <h5 class="card-title">{{contratantePublico.tipo_musica}}</h5>
+    </div>
+    <div class="card-body" id="presentcontratante">
+        <img style="height: 300px; width: 300px; display: flexbox; align-items: center;" id="presentcontratante" [src]="contratantePublico.imagen" alt="Card image">
+    </div>
+</div>
+

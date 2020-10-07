@@ -1,0 +1,42 @@
+
+<form class="text-white bg-success" [formGroup]="formulariocolegio" (ngSubmit)="recogerDatos()">
+    <fieldset>
+        <h1>Formulario de inscripcion</h1>
+        <h5>Se ruega a los usuarios que se abstengan de utilizar esta red para criticar de forma pública a los usuarios. Para comunicar incidencias, contacte con administración, por favor. Gracias por su colaboración.</h5>
+        <p>Lo más conveniente es rellenar todos los campos</p>
+        <div class="form-group">
+            <label  for="exampleInputName">Nombre y apellidos del solicitante</label>
+            <input type="namel" class="form-control" id="exampleInputName" aria-describedby="namelHelp" placeholder="Introduce tu nombre y tus apellidos" formControlName="nombre_y_apellidos">
+        </div>
+        <div class="form-group">
+            <label  for="exampleInputName">Nombre del colegio</label>
+            <input type="namel" class="form-control" id="exampleInputName" aria-describedby="namelHelp" placeholder="Introduce el nombre de tu escuela"  formControlName="nombre_colegio">
+        </div>
+        <div class="form-group">
+            <label  for="exampleInputName">Tipo de publico y descripcion del proyecto</label>
+            <input type="namel" class="form-control" id="exampleInputName" aria-describedby="namelHelp" placeholder="Describe el evento"  formControlName="descripcion_colegio">
+        </div>
+        <div class="form-group">
+            <label  for="exampleInputName">Precio</label>
+            <input type="namel" class="form-control" id="exampleInputName" aria-describedby="namelHelp" placeholder="Precio"  formControlName="precio_colegio">
+        </div>
+        <div class="form-group">
+            <label  for="exampleInputEmail1">Email</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Escribe tu email (correo electrónico)" formControlName="email">
+        </div>
+        <div class="form-group">
+            <label>Imagen</label>
+            <input type="text" class="form-control" formControlName="imagen">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Contraseña</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Introduce una contraseña que te sea fácil recordar" formControlName="password">
+            <small id="emailHelp" class="form-text text-muted">Cuidado con quien la compartes.</small>
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Repite Contraseña</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Introduce la misma contraseña" formControlName="repite_password">
+        </div>
+        <button type="submit" class="btn btn-secondary btn-lg">Submit</button>
+    </fieldset>
+</form>

@@ -1,0 +1,92 @@
+<!-- jumbotron -->
+<div class="jumbotron">
+    <h1 class="display-3">Match the Music</h1>
+    <p class="lead">Pon un músico en tu vida</p>
+    <section id="two" class="wrapper style1 special">
+        <div class="inner">
+            <hr class="my-4">
+            <header>
+                <!-- Inscribirte como musico, colegio o contratante -->
+                <h2>Registros</h2>
+                <p>Regístrate para que la música comience a fluir</p>
+            </header>
+            <div class="flex flex-4">
+                <div class="box person">
+                    <a class="btn btn-info btn-lg nav-link" [routerLink]="['/nuevo-musico']" routerLinkActive="active" role="button">Soy músico</a>
+                </div>
+                <div class="box person">
+                    <a class="btn btn-secondary btn-lg" [routerLink]="['/nuevo-contratante']" routerLinkActive="active" role="button">Contratante privado</a>
+                </div>
+                <div class="box person">
+                    <a class="btn btn-success btn-lg" [routerLink]="['/nuevo-colegio']" routerLinkActive="active" role="button">Colegio</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <p>Web diseñada para poner en contacto a músicos, colegios y contratantes privados</p>
+    <p class="lead">
+        <!-- <a class="btn btn-info btn-lg nav-link" [routerlink]="['/musico']" routerLinkActive="active" href="/musico" role="button">Soy musico</a>
+        <a class="btn btn-secondary btn-lg" [routerlink]="['/contratante']" routerLinkActive="active" href="/contratante"  role="button">Contratante privado</a>
+        <a class="btn btn-success btn-lg" [routerlink]="['/colegio']" routerLinkActive="active" href="/colegio" role="button">Colegio</a> -->
+    </p>
+</div>
+
+<!-- Acesso a la lista de musicos y colegios -->
+<section id="one" class="wrapper">
+    <div class="inner">
+        <div class="flex flex-3">
+            <article>
+                <header>
+                    <h3>Colegios implicados</h3>
+                </header>
+                <p>Escuelas comprometidas con la música</p>
+                <footer>
+                    <img src="assets/images/colegio.png" alt="Colegio">
+                    <a [routerLink]="['/vista_colegios']" routerLinkActive="active" class="button special btn-lg">Ver Colegios</a>
+                </footer>
+            </article>
+            <article>
+                <header>
+                    <h3>Musicos</h3>
+                </header>
+                <p>Músicos que ofrecen buenos eventos </p>
+                <footer>
+                    <img class="icon" src="assets/images/icono_matchmusic.jpg" alt="Musico">
+                    <a [routerLink]="['/vista_musicos']" routerLinkActive="active" class="button special btn-lg">Ver Musicos</a>
+                </footer>
+            </article>
+            <article>
+                <header>
+                    <h3>Contratantes</h3>
+                </header>
+                <img src="assets/images/fiesta.png" alt="Persona">
+                <p>Buscando músicos para eventos especiales</p>
+                <a [routerLink]="['/vista_contratantes']" routerLinkActive="active" class="button special btn-lg">Ver Contratantes</a>
+            </article>
+        </div>
+    </div>
+</section>
+
+<router-outlet></router-outlet>
+
+<footer class="page-footer font-small">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 py-2">
+                <div class="mb-5 flex-center">
+                    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+                        <br>
+                            <img class="icon" src="assets/images/icono_matchmusic - little.jpg" alt="Musico">
+                            <p>Para incidencias y darse de baja, escribir a matchmymusic@gmail.com con el motivo, tu nombre y tu contraseña. GRACIAS</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Footer -->
+
+
+
+

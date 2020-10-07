@@ -1,0 +1,37 @@
+.jumbotron{
+    text-align: center;
+    background-color: #fff3e8;
+}
+
+div a{
+    margin: 30px;
+    display: block;
+    padding: 30px;
+
+}
+
+div header{
+    text-align: center;
+}
+
+div p{
+    text-align: center;
+}
+
+footer a{
+    text-align: center;
+}
+
+article{
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+}
+
+footer .container{
+    margin-top: 60px;
+    text-align: center;
+
+}

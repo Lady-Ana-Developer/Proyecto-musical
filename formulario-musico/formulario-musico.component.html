@@ -1,0 +1,51 @@
+<form class="text-white bg-info"  [formGroup]="formulariomusico" (ngSubmit)="recogerDatos()">
+    <fieldset>
+        <h1>Formulario de inscripcion</h1>
+        <h5>Se ruega a los usuarios que se abstengan de utilizar esta red para criticar de forma pública a los usuarios. Para comunicar incidencias, contacte con administración, por favor. Gracias por su colaboración.</h5>
+        <p>Lo más conveniente es rellenar todos los campos</p>
+        <div class="form-group">
+            <label for="exampleInputName">Nombre</label>
+            <input type="name" class="form-control" id="exampleInputName" aria-describedby="namelHelp" placeholder="Introduce tu nombre" formControlName="nombre">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputName">Apellidos</label>
+            <input type="name" class="form-control" id="exampleInputName" aria-describedby="namelHelp" placeholder="Introduce tus apellidos" formControlName="apellidos">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputName">Formacion</label>
+            <input type="name" class="form-control" id="exampleInputName" aria-describedby="namelHelp" placeholder="Introduce tu formación mas reciente" formControlName="formacion">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputName">Estilos</label>
+            <input type="name" class="form-control" id="exampleInputName" aria-describedby="namelHelp" placeholder="Estilos" formControlName="estilos">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Email</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Introduce tu email (correo electrónico)" formControlName="email">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputName">Piezas que sabes tocar</label>
+            <input type="name" class="form-control" id="exampleInputName" aria-describedby="namelHelp" placeholder="Introduce que sabes tocar/cantar" formControlName="canciones">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputName">Agrupación a la que perteneces</label>
+            <input type="namel" class="form-control" id="exampleInputName" aria-describedby="namelHelp" placeholder="Introduce grupo o indica que eres solista" formControlName="agrupacion">
+        </div>
+        <div class="form-group">
+            <label>Imagen</label>
+            <input type="text" class="form-control" formControlName="imagen">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Contraseña</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Introduce una contraseña que te sea fácil recordar" formControlName="password">
+            <small id="emailHelp" class="form-text text-muted">Cuidado con quien la compartes.</small>
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Repite Contraseña</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Introduce la misma contraseña" formControlName="repite_password">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </fieldset>
+</form>
+
+

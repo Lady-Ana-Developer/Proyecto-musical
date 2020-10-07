@@ -1,0 +1,15 @@
+<!-- perfil del colegio -->
+<div class="card text-white bg-success mb-3">
+
+    <h3 class="card-header" style="text-align: center; align-items: center;">Colegio</h3>
+    <div class="card-body" id="presentcolegio">
+        <h4 class="card-title">{{colegioPublico.nombre_colegio}}</h4>
+        <h5 class="card-text">{{colegioPublico.nombre_y_apellidos}}</h5>
+        <p class="card-text">{{colegioPublico.email}}</p>
+    </div>
+    <div class="card-body" id="presentcolegio">
+        <img style="height: 300px; width: 300px; display: flexbox; align-items: center;" [src]="colegioPublico.imagen" id="presentcolegio" alt="Card image">
+        <p class="card-text">{{colegioPublico.descripcion_colegio}}</p>
+        <p class="card-text">{{colegioPublico.precio_colegio}}</p>
+    </div>
+</div>

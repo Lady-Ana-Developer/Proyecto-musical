@@ -1,0 +1,15 @@
+<!-- perfil del musico -->
+<div class="card text-white bg-info mb-3">
+    <h3 class="card-header" style="text-align: center; align-items: center;">Músico</h3>
+    <div class="card-body" id="present">
+        <h5 class="card-title">{{musicoPublico.nombre}}<br>{{musicoPublico.apellidos}}</h5>
+        <h4 class="card-title">{{musicoPublico.email}}</h4>
+    </div>
+    <img style="height: 400px; width: 400px; display: flexbox; align-items: center;" id="present" [src]="musicoPublico.imagen" alt="Card image">
+    <div class="card-body" id="present">
+        <p class="card-text">{{musicoPublico.formacion}}</p>
+        <h4 class="card-title">{{musicoPublico.canciones}}</h4>
+        <p class="card-text">{{musicoPublico.estilos}}</p>
+        <h6 class="card-subtitle mb-2 text-muted">{{musicoPublico.agrupacion}}</h6>
+    </div>
+</div>
